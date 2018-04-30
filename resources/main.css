@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+header {
+    background: url(guitars.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 600px;
+}
+header h1 {
+    box-sizing: border-box;
+    height: 100%;
+    width: calc(30% + 125px);
+    position: absolute;
+    right: 0;
+    background: rgba(96, 22, 10, 0.8);
+    font-family: Economica;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 200px;
+    font-size: 65px;
+    line-height: 70px;
+}
+section {
+    box-sizing: border-box;
+    padding: 100px 50px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Palanquin;
+}
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 1px;
+}
+@media screen and (max-width: 550px) {
+    header h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    section {
+        padding: 50px 25px;
+    }
+}
+p {
+    margin-top: 0;
+}
+#info {
+    background-color: #e7d9c0;
+}
+#info img {
+    float: left;
+    width: 25%;
+    height: auto;
+    padding: 0 20px 20px 0;
+    min-width: 175px;
+}
+.linkbox {
+    box-sizing: border-box;
+    border: 4px solid #60160a;
+    width: 30%;
+    margin-right: 5%;
+    text-align: center;
+    float: left;
+    padding: 40px 0;
+    height: 250px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 18px;
+    transition: background .5s;
+    display: block;
+    text-decoration: none;
+}
+.linkbox:last-of-type{
+    margin-right: 0;
+}
+.linkbox img {
+    max-width: 90%;
+    height: auto;
+}
+.linkbox img.star {
+    position: relative;
+    top: 7px;
+}
+.linkbox:hover {
+    background-color: rgba(96, 22, 10, 0.05);
+}
+.linkbox.reverb {
+    padding-top: 60px;
+}
+.linkbox.facebook {
+    padding-top: 70px;
+}
+@media screen and (max-width: 800px) {
+    .linkbox {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+        height: auto;
+        padding-top: 40px !important;
+    }
+}
+
+#photos {
+    clear: both;
+    padding: 50px 0 0 0;
+}
+#photos img {
+    width: 33.333%;
+    height: auto;
+}
+@media screen and (max-width: 550px) {
+    #photos img {
+        width: 100%;
+    }
+}
+
+/* copied from Reverb's CSS */
+.seller-badge-block {
+  display: inline-block;
+  margin-right: 1rem; }
+  .seller-badge-block:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    .seller-badge-block {
+      margin-bottom: 0.5rem; } }
+
+.shop-badge {
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 32px;
+  height: 32px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.1;
+  cursor: default;
+  color: #057bc4;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.shop-badge-standalone {
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 34px;
+  box-sizing: border-box; }
+  .shop-badge-standalone.preferred-seller-badge {
+    width: 40px; }
+
+.preferred-seller-badge {
+  background-image: url(reverb-preferred.png);
+}
+.quick-shipper-badge {
+  background-image: url(reverb-quick-shipper.png);
+}
+.quick-responder-badge {
+  background-image: url(reverb-quick-responder.png);
+}
