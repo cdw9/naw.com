@@ -25,7 +25,7 @@ header h1 {
 }
 section {
     box-sizing: border-box;
-    padding: 100px 50px;
+    padding: 100px 50px 50px;
     font-size: 25px;
     line-height: 30px;
     font-family: Palanquin;
@@ -67,7 +67,6 @@ p {
     float: left;
     padding: 40px 0;
     height: 250px;
-    margin-bottom: 50px;
     font-size: 14px;
     line-height: 18px;
     transition: background .5s;
